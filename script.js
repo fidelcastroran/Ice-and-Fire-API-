@@ -14,7 +14,7 @@ searchInput.addEventListener("input", (e) => {
 let book = async () => {
   try {
     let url = "https://www.anapioficeandfire.com/api/books";
-    let res = await fetch(url, { method: "GET" });
+    let res = await fetch(url);
     let data = await res.json();
     users = data.map((i) => {
       return {
